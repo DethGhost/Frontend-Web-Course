@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/animate.js"></script>
     <title>Title</title>
 </head>
-<body>
+<body onload="animate()">
 <div class="video_bg">
     <video poster="images/video-bg.jpg" autoplay loop>
         <source src="video/video-bg.mp4" type="video/mp4">
@@ -17,10 +18,10 @@
 <div class="main">
     <div class="container">
         <div class="left">
-            <img src="images/description-phone-back1-250x485.png">
-            <img class="front" src="images/description-phone-front1-260x540.png">
+            <img id="back" class="from-left-to-right-side" src="images/description-phone-back1-250x485.png">
+            <img id="front" class="front from-left-to-right-side" src="images/description-phone-front1-260x540.png">
         </div>
-        <div class="right">
+        <div id="right" class="right from-right-to-left-side">
             <div class="logo">
                 <img src="images/hero-logo-2.png">
             </div>
